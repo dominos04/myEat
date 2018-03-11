@@ -13,6 +13,7 @@
 		2199F27B2055CFBF008CE148 /* myEat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2199F2792055CFBF008CE148 /* myEat.xcdatamodeld */; };
 		2199F27D2055CFC1008CE148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2199F27C2055CFC1008CE148 /* Assets.xcassets */; };
 		2199F2802055CFC1008CE148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2199F27E2055CFC1008CE148 /* LaunchScreen.storyboard */; };
+		2199F28C2055D123008CE148 /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2199F28B2055D123008CE148 /* TabBarControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2199F27C2055CFC1008CE148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2199F27F2055CFC1008CE148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2199F2812055CFC1008CE148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2199F28B2055D123008CE148 /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				2199F2722055CFBF008CE148 /* AppDelegate.swift */,
-				2199F2742055CFBF008CE148 /* ViewController.swift */,
-				2199F2762055CFBF008CE148 /* Main.storyboard */,
-				2199F27C2055CFC1008CE148 /* Assets.xcassets */,
-				2199F27E2055CFC1008CE148 /* LaunchScreen.storyboard */,
-				2199F2812055CFC1008CE148 /* Info.plist */,
-				2199F2792055CFBF008CE148 /* myEat.xcdatamodeld */,
+				2199F2882055CFED008CE148 /* Controller */,
+				2199F2872055CFE1008CE148 /* View */,
+				2199F2892055CFF9008CE148 /* Model */,
+				2199F28A2055D009008CE148 /* Support */,
 			);
 			path = myEat;
+			sourceTree = "<group>";
+		};
+		2199F2872055CFE1008CE148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2199F27E2055CFC1008CE148 /* LaunchScreen.storyboard */,
+				2199F2762055CFBF008CE148 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2199F2882055CFED008CE148 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2199F2742055CFBF008CE148 /* ViewController.swift */,
+				2199F28B2055D123008CE148 /* TabBarControllerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2199F2892055CFF9008CE148 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2199F2792055CFBF008CE148 /* myEat.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2199F28A2055D009008CE148 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2199F2812055CFC1008CE148 /* Info.plist */,
+				2199F27C2055CFC1008CE148 /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				2199F2752055CFBF008CE148 /* ViewController.swift in Sources */,
 				2199F2732055CFBF008CE148 /* AppDelegate.swift in Sources */,
+				2199F28C2055D123008CE148 /* TabBarControllerViewController.swift in Sources */,
 				2199F27B2055CFBF008CE148 /* myEat.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DomenicoDangelo.myEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.DomenicoDangelo.myEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
